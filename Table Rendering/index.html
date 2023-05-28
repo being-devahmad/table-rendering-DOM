@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Vanilla.js</title>
+    <style>
+      .btn {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 15px;
+        margin-top: 7px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Document Object Model - DOM</h1>
+    Ascending Order<input
+      type="radio"
+      name="opt"
+      value="asc"
+      onchange="ascSorting()"
+    />
+    <br />
+    Dscending Order<input
+      type="radio"
+      name="opt"
+      value="dsc"
+      onchange="dscSorting()"
+    />
+    <table border="10" cellpadding="15">
+      <tr id="tableRow"></tr>
+    </table>
+    <button onclick="addVal()" class="btn">Add new value</button>
+    <button onclick="delVal()" class="btn">Delete current value</button>
+    <button onclick="colorEven()" class="btn">Even Numbers</button>
+    <button onclick="colorOdd()" class="btn">Odd Numbers</button>
+    <button onclick="swapToLeft()" class="btn">Swap left</button>
+    <button onclick="swapToRight()" class="btn">Swap Right</button>
+    <h4 id="selectedValue"></h4>
+    <script src="script.js"></script>
+  </body>
+</html>
